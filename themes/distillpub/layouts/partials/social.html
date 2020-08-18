@@ -1,0 +1,5 @@
+{{- range .Site.Params.social -}}
+<a target="_blank" href="{{ safeURL .url }}">
+  <i class="{{ .class }}" aria-hidden="true"></i>
+</a>
+{{ end }}

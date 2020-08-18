@@ -1,0 +1,53 @@
+<d-header>
+  <style>
+    d-header {
+      display: block;
+      align-items: center;
+      background-color: {{ .Site.Params.color }};
+      padding: 2em 4em;
+      z-index: 2;
+      color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    d-header a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    d-header a:hover {
+      color: white;
+    }
+
+    d-header .nav {
+      float: right;
+      font-weight: 300;
+    }
+    d-header .nav a {
+      font-size: 0.8em;
+      margin-left: 1.5em;
+      text-transform: uppercase;
+    }
+
+    d-header .logo {
+      font-size: 1.5em;
+    }
+  </style>
+
+  
+<!-- Navbar would go here -->
+<!--   
+
+<div class="content">
+    <a href="/" class="logo">{{ .Site.Title }}</a>
+    <div class="nav">
+      {{ range .Site.Menus.main }}
+        <a target="_blank" href="{{ .URL }}">{{ .Title }}</a> 
+      {{ end }}
+      <a target="_blank" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}">RSS</a>
+    </div>
+  </div> 
+
+-->
+</d-header>
+
