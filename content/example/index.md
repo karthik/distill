@@ -6,9 +6,8 @@ thumbnail = ""
 categories = [
   "demo"
 ]
-tags = []
+tags = ['test', 'testing', 'tested']
 
-vega = true
 
 [distill]
   [distill.supportFiles]

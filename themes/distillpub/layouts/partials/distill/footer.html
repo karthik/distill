@@ -41,18 +41,22 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
   }
+
+  .footer-close p {
+    color: #FFFFFF
+  }
   </style>
   
+
   <div class="l-page">
     <div class="nav">
       {{ partial "social" . }}
     </div>
 
     <div class="footer-close">
-      <p>&copy; {{ now.Format "2006" }}</p>
+      <p>This test of a Hugo + Distill theme &copy; {{ now.Format "2006" }}</p>
       <p>
       </p>
     </div>
   </div>
 </dt-footer>
-

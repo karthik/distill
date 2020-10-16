@@ -18,9 +18,9 @@ tags = ["test", "site"]
   author = "Karthik Ram"
   authorURL = "http://spf13.com/"
 
-    [[distill.authors.affiliations]]
-    name = "University of California, Berkeley"
-    url = "https://bids.berkeley.edu"
+  [[distill.authors.affiliations]]
+  name = "University of California, Berkeley"
+  url = "https://bids.berkeley.edu"
 
 +++
 

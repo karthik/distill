@@ -3,6 +3,7 @@
     {{ readFile (printf "%s%s" .File.Dir .Params.Distill.SupportFiles.Appendix) | safeHTML | markdownify }}
   {{ end }}
 
+<!-- Not sure what this part does below? Are these the footnotes? -->
   {{ if .Site.Params.SourcePrefix }}
     {{ $srcFileURL := (printf "%s/content/%s" .Site.Params.SourcePrefix .File.Dir) }}
     <h3>Updates and Corrections</h3>
@@ -11,7 +12,9 @@
     </p>
   {{ end }}
 
+<!-- These are the references -->
+
   {{ if and (.Params.Distill.SupportFiles.Bibliography) (fileExists ((printf "%s%s" .File.Dir .Params.Distill.SupportFiles.Bibliography))) }}
-    <d-bibliography src="{{ .RelPermalink }}{{ .Params.Distill.SupportFiles.Bibliography }}"></d-bibliography>  
+    <d-bibliography src="{{ .RelPermalink }}{{ .Params.Distill.SupportFiles.Bibliography }}"></d-bibliography>
   {{ end }}
 </d-appendix>
