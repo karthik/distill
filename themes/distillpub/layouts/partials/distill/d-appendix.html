@@ -14,7 +14,7 @@
 
 <!-- These are the references -->
 
-  {{ if and (.Params.Distill.SupportFiles.Bibliography) (fileExists ((printf "%s%s" .File.Dir .Params.Distill.SupportFiles.Bibliography))) }}
-    <d-bibliography src="{{ .RelPermalink }}{{ .Params.Distill.SupportFiles.Bibliography }}"></d-bibliography>
-  {{ end }}
+{{ if and (.Params.Distill.SupportFiles.Bibliography) (fileExists ((printf "%s%s" .File.Dir .Params.Distill.SupportFiles.Bibliography))) }}
+  <d-bibliography src="{{ .RelPermalink }}{{ .Params.Distill.SupportFiles.Bibliography }}"></d-bibliography>
+{{ end }}
 </d-appendix>

@@ -43,6 +43,7 @@ We can {{<cite bib="mercier2011humans">}} also cite {{<cite bib="gregor2015draw,
 
 We should also be testing footnotes{{<footnote>}}This will become a hoverable footnote. This will become a hoverable footnote. This will become a hoverable footnote. This will become a hoverable footnote. This will become a hoverable footnote. This will become a hoverable footnote. This will become a hoverable footnote. This will become a hoverable footnote.{{</footnote>}}. There are multiple footnotes, and they appear in the appendix{{<footnote>}}Given I have coded them right. Also, here’s math in a footnote: {{<math>}}c = \sum_0^i{x}{{</math>}}. Also, a citation. Box-ception {{<cite bib="gregor2015draw">}}! {{</footnote>}} as well.
 
+
 | **First**  | **Second** | **Third** |
 |---|---|---|
 | 23  | 654 | 23  |
@@ -71,11 +72,11 @@ def fib(n):
       a, b = b, a+b
 {{</code>}}
 
-### Wide image
+We ought to cite the {{<cite bib="10.1371/journal.pone.0231939">}} paper.
 
+WE ought to cite the
 
-
-{{<wide-image `.l-page-outset`>}}<img src="https://placebear.com/800/250">{{</wide-image>}}
+{{<wide-image `.l-page`>}}<img src="https://placebear.com/800/250">{{</wide-image>}}
 
 
 
